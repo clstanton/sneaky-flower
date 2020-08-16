@@ -18,11 +18,13 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
-  --light: #fafafa;
-  --dark: #000000;
+  --primary: #028090;
+  --secondary: #4C5C68;
+  --tertiary: #C5C3C6;
+  --quaternary: #00A896;
+  --quniary: #02C39A;
+  --light: #DCDCDD;
+  --dark: #46494C;
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -47,9 +49,9 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
-  color: var(--light);
-  font-family: 'Poiret One', cursive;
+  background: var(--tertiary);
+  color: var(--primary);
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 
 }
 
@@ -59,7 +61,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -105,11 +107,19 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  /*background: var(--dark);*/
+  padding: 30px 20px;
+  background-image: url("./assets/header/tim-mossholder-4P5DMXQXzRI-unsplash.jpg");
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  background-size: 50%;
+  background-position: bottom;
+  /*background-attachment: relative;*/
 }
 
 header a {
-  color: var(--light);
+  color: var(--tertiary);
 }
 
 button {
