@@ -51,8 +51,7 @@ body {
   letter-spacing: .1em;
   background: var(--tertiary);
   color: var(--primary);
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-
+  font-family: 'Shadows Into Light', cursive;
 }
 
 h1,
@@ -61,7 +60,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: 'Shadows Into Light', cursive;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
