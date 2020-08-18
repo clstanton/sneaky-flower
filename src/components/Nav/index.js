@@ -2,7 +2,11 @@ import React from 'react';
 // import React, { useState } from "react";
 // import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function Nav() {
+function Nav(props) {
+    const { 
+        contactSelected,
+        setContactSelected
+      } = props;
   return (
     <header className="flex-row px-1">
         <h2>
@@ -13,32 +17,18 @@ function Nav() {
         <nav>
             <ul className="flex-row">
                 <li className="mx-2">
-                    <a
-                        href="#about"
-                    >
+                    <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
                         About Me
                     </a>
                 </li>
-                <li>
-                    <a 
-                        href="#portfolio"
-                    >
-                        Portfolio
-                    </a>
+                <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+                    <span onClick={() => setContactSelected(false)}>Portfolio</span>
                 </li>
-                <li>
-                    <a 
-                        href="#contact"
-                    >
-                        Contact
-                    </a>
+                <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+                    <span onClick={() => setContactSelected(true)}>Contact</span>
                 </li>
-                <li>
-                    <a 
-                        href="#resume"
-                    >
-                        Resume
-                    </a>
+                <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+                    <span onClick={() => setContactSelected(false)}>Resume</span>
                 </li>
             </ul>
         </nav>

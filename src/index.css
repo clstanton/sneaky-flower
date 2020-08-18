@@ -22,10 +22,11 @@ main {
   --secondary: #4C5C68;
   --tertiary: #C5C3C6;
   --quaternary: #00A896;
-  --quniary: #02C39A;
+  --quinary: #02C39A;
+  --senary: #5CFF26;
+  --septenary: #FFBD59;
   --light: #DCDCDD;
   --dark: #46494C;
-  --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -114,6 +115,7 @@ header {
   flex-wrap: wrap;
   background-size: 50%;
   background-position: bottom;
+  color: var(--tertiary);
   /*background-attachment: relative;*/
 }
 
@@ -313,5 +315,6 @@ a {
 }
 
 .navActive {
-  color: var(--secondary);
+  color: var(--septenary);
+  /* color: var(--senary);*/
 }

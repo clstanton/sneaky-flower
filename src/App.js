@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
@@ -6,13 +6,28 @@ import ContactForm from './components/Contact';
 //import './App.css';
 
 function App() {
+  const [contactSelected, setContactSelected] = useState(false);
+  //const [portfolioSelected, setPortfolioSelected] = useState(false);
+  //const [resumeSelected, setResumeSelected] = useState(false);
   return (
     <div>
-      <Nav></Nav>
+      <Nav
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+        //portfolioSelected={portfolioSelected}
+        //setPortfolioSelected={setPortfolioSelected}
+        //resumeSelected={resumeSelected}
+        //setResumeSelected={setResumeSelected}
+      ></Nav>
       <main>
-        <ContactForm></ContactForm>
-        <Portfolio></Portfolio>
-        <About></About>
+        {!contactSelected ? (
+          <>
+            <About></About>
+            <Portfolio></Portfolio>
+          </>
+        ) : (
+            <ContactForm></ContactForm>
+          )}
       </main>
     </div>
   );
