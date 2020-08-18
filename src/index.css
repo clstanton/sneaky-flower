@@ -24,7 +24,7 @@ main {
   --quaternary: #00A896;
   --quinary: #02C39A;
   --senary: #5CFF26;
-  --septenary: #FFBD59;
+  --septenary: #E85D04;
   --light: #DCDCDD;
   --dark: #46494C;
   --error: rgb(228, 46, 1);
@@ -69,6 +69,7 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
+  color: var(--septenary);
 }
 
 h2 {
