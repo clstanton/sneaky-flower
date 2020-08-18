@@ -5,15 +5,19 @@ function Resume() {
     <section>
       <h1 id="resume">Resume</h1>
       <h4>Section 1</h4>
-        <ul>Skill 1</ul>
-        <ul>Skill 2</ul>
-        <ul>Skill 3</ul>
-        <ul>Skill 4</ul> <br></br>
+        <ul>
+          <li className="resume-list">Skill 1</li>
+          <li className="resume-list">Skill 2</li>
+          <li className="resume-list">Skill 3</li>
+          <li className="resume-list">Skill 4</li> 
+        </ul> <br></br>
       <h4>Section 2</h4>
-        <ul>Skill 1</ul>
-        <ul>Skill 2</ul>
-        <ul>Skill 3</ul>
-        <ul>Skill 4</ul>
+        <ul>
+          <li className="resume-list">Skill 1</li>
+          <li className="resume-list">Skill 2</li>
+          <li className="resume-list">Skill 3</li>
+          <li className="resume-list">Skill 4</li> 
+        </ul>
     </section>
   );
 }
