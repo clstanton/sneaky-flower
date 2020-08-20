@@ -25,6 +25,8 @@ main {
   --quinary: #02C39A;
   --senary: #5CFF26;
   --septenary: #E85D04;
+  --octonary: #FF0054;
+  --nonary: #FF66D8;
   --light: #DCDCDD;
   --dark: #46494C;
   --error: rgb(228, 46, 1);
@@ -69,7 +71,7 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
-  color: var(--septenary);
+  color: var(--octonary);
 }
 
 h2 {
@@ -117,7 +119,6 @@ header {
   background-size: 50%;
   background-position: bottom;
   color: var(--tertiary);
-  /*background-attachment: relative;*/
 }
 
 header a {
@@ -192,6 +193,19 @@ textarea {
 	height: 120px;
 	border: 3px solid #cccccc;
 	padding: 5px;
+}
+
+footer {
+  color: var(--octonary);
+  text-align: center;
+}
+
+.fa-github {
+  color: var(--octonary);
+}
+
+.fa-linkedin {
+  color: var(--octonary);
 }
 
 .container {
@@ -320,6 +334,5 @@ a {
 }
 
 .navActive {
-  color: var(--septenary);
-  /* color: var(--senary);*/
+  color: var(--octonary);
 }
